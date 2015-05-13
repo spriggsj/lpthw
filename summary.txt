@@ -1,0 +1,1162 @@
+Print function AKA Hello world
+
+print "Hello World!"
+print "Hello Again"
+print "I like typing this"
+print "this is fun"
+print "yay! printing"
+print "I'd much rather 'not'"
+print "I ""said"" do not touch this"  
+print "Testing my memmory"
+
+Comments and pound characters
+
+# a comment, this is so you can read your program later.
+# anything after the # is ignored by python.
+print "I could have code like this" # and the comment after is ignored.
+# You can also use a comment to disable or comment out a piece of code:
+# print this won't run
+print " this will run"
+
+Numbers and math
+# print will print the string inside the quotes
+
+print " i will now count my chickens:"
+# math is performed outside of the quotes
+print "hens" , 25 + 30 / 6
+# % is the modulo
+print "roosters" , 100 - 25 * 3 % 4
+
+print "now I will count the eggs : " 
+
+print 3 + 2 + 1 - 5 + 4 % 2 - 1 / 4 + 6
+# adding a decimal and a value converts the integer to a floating point value.
+print " is it true that 3.0 + 2 < 5 - 7?"
+
+print 3 + 2 < 5 - 7
+
+print "what is 3 + 2?" , 3 + 2
+print "what is 5 - 7?" , 5 - 7
+
+print "oh that's why it's false"
+
+print "how about some more"
+
+print "is it greater?" , 5 > -2
+
+print "is it greater or equal?" , 5 >= -2
+
+print "is it less or equal?" , 5 <= -2  
+#writing this type of math expression forces python to convert to a boolean .. false or true
+print 3.0 + 2 < 5 - 7
+
+Variables and Names
+cars = 100
+space_in_a_car = 4.0
+drivers = 30
+passengers = 90 
+cars_not_driven = cars - drivers
+cars_driven = drivers
+carpool_capacity = cars_driven * space_in_a_car
+average_passengers_per_car = passengers / cars_driven
+
+
+print "there are", cars, "cars available"
+print "there are only", drivers, "drivers available"
+print "there will be", cars_not_driven, "empty cars today"
+print "we can transport", carpool_capacity, "people today"
+print "we have", passengers, "to carpool today"
+print "we need to put about", average_passengers_per_car, "in each car"
+ 
+
+More variables and printing
+my_name = 'Jason Spriggs'
+my_age = 42 # not a lie
+my_height = 72 # inches
+my_weight = 195 # lbs
+my_eyes = 'Blue'
+my_teeth = 'White'
+my_hair = 'Brown'
+
+print "Lets talk about %s." % my_name
+print "He's %d inches tall." % my_height
+print "He weighs %d lbs." % my_weight
+print "Actually thats not to heavy"
+print "He has %s eyes and %s hair." % ( my_eyes, my_hair)
+print "His teeth are usually %s depending on the coffee" % my_teeth
+
+# this line is tricky
+print "If i add %d, %d, and %d I get %d" % (my_age, my_height, my_weight, my_age + my_height + my_weight) 
+
+Strings and text
+x = "There are %d types of people" % 10
+binary = "binary"
+do_not = "Don't"
+y = "Those who know %s and those who %s" % (binary, do_not)
+
+print x
+print y
+
+print "I said: %r" % x
+print "I also said: '%s'." % y
+
+hilarious = 'false'
+joke_evaluation = "Isn't that joke funny?! %r" # %r is not defined until l15
+
+print joke_evaluation % hilarious 
+
+w = "this is the left side of ..."
+e = "a string and this is the right"
+
+print w + e
+More printing
+print "Mary had a little lamb."
+print "It's fleece was white as %s" % 'snow'
+print "And everywhere Mary went."
+print "." * 10 # what did that do? times '.' 10 times
+
+end1 = "C"
+end2 = "h"
+end3 = "e"
+end4 = "e"
+end5 = "s"
+end6 = "e"
+end7 = "B"
+end8 = "u"
+end9 = "r"
+end10 = "g"
+end11 = "e"
+end12 = "r"
+
+print end1 + end2 + end3 + end4 + end5 + end6,
+print end7 + end8 + end9 + end10 + end11 + end12
+
+Printing Printing
+formatter = "%r %r %r %r"
+print formatter % (1, 2, 3, 4)
+print formatter % ("one", "two", "three", "four")
+print formatter % (True, False, False, True)
+print formatter % (formatter, formatter, formatter, formatter)
+print formatter % (
+"I had this thing",
+"That you could type up right",
+"But it did not sing",
+"So I said goodnight"
+)
+
+Printing printing printing
+days = "Mon Tue Wed Thur Fri Sat Sun" 
+months = "\nJan\nFeb\nMar\nApril\nMay" #\n new line
+
+print "Here are the days: ", days
+print "Here are the months: ", months
+
+print """
+There is something going on here.
+With the three double quotes.
+We can type as much as we like.
+Even 4, 5, or 6 lines.
+""" # three quotes allows multiple lines to be printed.
+
+What was that
+tabby_cat = "\tI'm tabbed in."
+persian_cat = "I'm split\non a line."
+backslash_cat = "I'm \\ a \\ cat." #\ before a \ escapes the character
+
+fat_cat = """
+I'll do a list:
+\t* cat food
+\t* Fishies
+\t* Catnip\n\t* grass 
+""" #\t abs in and * creates a bullet point
+
+
+
+
+print tabby_cat
+print persian_cat
+print backslash_cat
+print fat_cat
+
+
+
+Asking questions
+print "How old are you?", # remember the comma to keep it on the same line
+age = raw_input()
+print "How tall are you?",
+height = raw_input()
+print "How much do you weigh?",
+weight = raw_input()
+
+print "So you are %r years old, %r tall, and weigh %r." % ( age, height, weight)
+
+
+
+Promting people
+age = raw_input ("how old are you?")
+height = raw_input ("how tall are you?")
+weight = raw_input ("how much do you weigh?")
+
+print "So you are %r years old, %r tall, and weigh %r." % (
+age, height, weight)
+
+Parameters, unpacking, Variables
+from sys import argv
+
+script, first, second, third = argv
+
+print "the script is called:", script
+print "your first variable is:", first
+print "your second vaviable is:", second
+print "your third variable is:", third
+
+# to run this code you write python ex13.py then add the 3 other arguments ie one two three
+# the one would get assigned to first
+# the two would be passed to second
+# the three would pass to third
+
+Prompting and passing
+from sys import argv
+
+script, user_name = argv
+prompt = '- '
+
+print "Hi %s, Im the %s script." % (user_name, script)
+print "I'd like to ask you a few questions."
+print "Do you like me %s ?" % user_name
+likes = raw_input (prompt)
+
+print "Where do you live %s?" % user_name
+lives = raw_input (prompt)
+
+print "What kind of computer do you have?"
+computer = raw_input (prompt)
+
+print """
+Alright, so you said %r about liking me.
+You live in %r. Not sure where that is.
+and you have a %r computer. Nice.
+""" % (likes, lives, computer)
+
+# to run this script you write python ex14.py and pass 1 var of name ie jason
+
+Reading files
+from sys import argv
+ 
+script, filename = argv
+
+txt = open(filename)
+
+print "Here's your file %r:" % filename
+print txt.read()
+
+print "Type the file name again:"
+file_again = raw_input("-")
+
+txt_again = open(file_again)
+
+print txt_again.read()
+
+txt.close
+txt_again.close
+
+# to run this program write python ex15.py ex15_sample.txt 
+
+Reading and writing files
+from sys import argv
+ 
+script, filename = argv
+
+txt = open(filename)
+
+print "Here's your file %r:" % filename
+print txt.read()
+
+print "Type the file name again:"
+file_again = raw_input("-")
+
+txt_again = open(file_again)
+
+print txt_again.read()
+
+txt.close
+txt_again.close
+
+# to run this program write python ex15.py ex15_sample.txt 
+
+More files
+from sys import argv
+from os.path import exists
+
+script, from_file, to_file = argv
+
+print "Copying from %s to %s" % (from_file, to_file)
+
+
+in_file = open(from_file)
+indata = in_file.read()
+
+print "The input file is %d bytes long" % len(indata)
+
+print "Does the output file exist? %r" % exists(to_file)
+print "Ready hit return to continue, CTRL-C to abort"
+raw_input()
+
+
+out_file = open(to_file, 'w')
+out_file.write(indata)
+
+print "Alright all done"
+
+out_file.close()
+in_file.close()
+# to run write python ex17.py 16.txt 16b,txt
+# 16.txt is the from file
+# 16b.txt is the new file
+# 16 and 16b can be any file or new file
+
+Names, Variables, Code, Functions
+def print_two(*args):
+	arg1, arg2 = args
+	print "arg1: %r, arg2: %r" % (arg1, arg2)
+	
+def print_two_again(arg1, arg2):
+	print "arg1: %r, arg2: %r" % (arg1, arg2)
+	
+def print_one(arg1):
+	print "arg1: %r" % arg1
+	
+def print_none():
+	print "I got nothin"
+	
+print_two("jason","spriggs")
+print_two_again("Jason","Spriggs")
+print_one("jason")
+print_none()
+
+Functions and Variables
+def cheese_and_crackers(cheese_count, boxes_of_crackers):
+	print "You have %d cheeses" % cheese_count
+	print "You have %d boxes of crackers" % boxes_of_crackers
+	print "Lets have a party"
+	print "Get a blanket.\n"
+	
+print "We can just give the function numbers directly:"
+cheese_and_crackers(20, 30)
+
+print "Or we can use variables from our script:"
+amount_of_cheese = 10
+amount_of_crackers = 20
+
+cheese_and_crackers(amount_of_cheese, amount_of_crackers)
+
+print "We can do math inside too:"
+cheese_and_crackers(10 +20, 5 + 47)
+
+print " and we can combine the two, variables and math:"
+cheese_and_crackers(amount_of_cheese + 100, amount_of_crackers + 150)
+
+Functions and Files
+from sys import argv
+
+script, input_file = argv
+# script=python input_file 16.txt (two arguments)
+def print_all(f):
+	print f.read()
+	
+def rewind(f):
+	f.seek(0)
+	# the 0 means go to 0 bytes with seek
+def print_a_line(line_count, f):
+	print line_count, f.readline()
+	
+current_file = open(input_file)
+
+print "first lets print the whole file:\n"
+
+print_all(current_file)
+
+print "Now lets rewind, kind of like a tape."
+
+rewind(current_file)
+
+print "Let's print three lines:"
+
+current_line =  1
+print_a_line(current_line, current_file)
+
+current_line = current_line + 1
+print_a_line(current_line, current_file)
+
+current_line = current_line + 1
+print_a_line(current_line, current_file)
+
+# to run python ex20.py 16.txt
+
+Functions can return something
+def add(a, b):
+	print "adding %d + %d" % (a, b)
+	return a + b
+	
+def subtract(a, b):
+	print "Subtracting %d - %d" % (a, b)
+	return a - b
+	
+def multiply(a, b):
+	print "Multiplying %d * %d" % (a, b)
+	return a * b
+	
+def divide(a, b):
+	print "Dividing %d / %d" % (a, b)
+	return a / b
+	
+print " Let,s do some math with just functions"
+
+age = add(30, 5)
+height = subtract(78, 4)
+weight = multiply(90, 2)
+iq = divide(100, 2)
+
+print "Age: %d, height: %d, weight: %d, iq: %d" % (age, height, weight, iq)
+
+#A puzzle for the extra credit type
+print "Here is a puzzle"
+
+what = add(age, subtract(height, multiply(weight, divide(iq, 2 ))))
+
+print "that becomes: ", what, "Can you do it by hand"
+
+What do you know so far
+print "exercise 0 cd, ls, pwd, cd .., cd ~, cat, push, and"
+
+print "exercise 1 print"
+
+print "exercise 2 #"
+
+print "excercise 3 +, -, /, *, %, <, >, <=, >=,"
+
+print "excercise 4 _in_variables"
+
+print "excercise 5 format strings, %s, %, %d, %r"
+
+print "excercise 6 ', \" "
+
+print "excercise 7 + join strings, ,join strings without space"
+
+print "excercise 8 true, false"
+
+print "excercise 9 \\, \\n, triple quotes"
+
+print "excercise 10 \\, \', \", \r, \t, triple single quotes"
+
+print "excercise 11 raw_input"
+
+print "excercise 12 raw_input(\"prompt text: \") pydoc"
+
+print "excercise 13 argv, packing, unpacking, module"
+
+print "excercise 14 prompt"
+
+print "excercise 15 open, . operator, .read, .close"
+
+print "excercise 16 w, r, a, w+, r+, .truncate, .write, pydoc, len()"
+
+print "excercise 17 os.path, exists"
+
+print "excercise 18 def, (*args), :"
+
+print "excercise 19 "
+
+print "excercise 20, .seek, .seek(0), .readline, =+"
+
+print "excercise 21 return"
+
+More Practice
+print "Let's practice everything."
+print 'You\'d need to know \'bout escapes with \\ that do \n newlines and \t tabs'
+
+poem = """
+\tThe lovely world
+with logic so firmly planted
+cannot discern \n the needs of love
+nor comprehend passion from intuition
+and requires an explanation
+\n\t\t where there is none.
+"""
+
+print "______________"
+print poem
+print "______________"
+
+five = 10 - 2 + 3 - 6
+print " This should be %s" % five
+
+def secret_formula(started):
+	jelly_beans = started * 500
+	jars = jelly_beans / 1000
+	crates = jars / 100
+	return jelly_beans, jars, crates
+	
+start_point = 10000
+beans, jars, crates = secret_formula(start_point)
+
+print "With a starting point of: %d" % start_point
+print "We'd have %d beans, %d jars, and %d crates" % (beans, jars, crates)
+
+start_point = start_point /10
+
+print "We can also do it this way:"
+print "We'd also have %d beans, %d jars, %d crates" % secret_formula(start_point)
+
+Even more Practice
+def break_words(stuff):
+	"""this function will break up words for us."""
+	words = stuff.split(' ')
+	return words
+	
+def sort_words(words):
+	"""Sorts the words"""
+	return sorted(words)
+	
+def print_first_word(words):
+	"""Prints the first word after popping it off"""
+	word = words.pop(0)
+	print word
+	
+def print_last_word(words):
+	"""Prints the last word after popping it off"""
+	word2 = words.pop(-1)
+	print word2
+	
+def sort_sentence(sentence):
+	"""Takes in full sentence and returns the sorted words"""
+	words = break_words(sentence)
+	return sort_words(words)
+	
+def print_first_and_last(sentence):
+	"""Prints the first and last words of a sentence"""
+	words = break_words(sentence)
+	print_first_word(words)
+	print_last_word(words)
+	
+def print_first_and_last_sorted(sentence):
+	"""sorts the words then prints the first and last one"""
+	words = sort_sentence(sentence)
+	print_first_word(words)
+	print_last_word(words)
+	
+	
+Test
+def break_words(stuff):
+    """This function will break up words for us."""
+    words = stuff.split(' ')
+    return words
+
+def sort_words(words):
+    """Sorts the words."""
+    return sorted(words)
+
+def print_first_word(words):
+    """Prints the first word after popping it off."""
+    word = words.pop(0)
+    print word
+
+def print_last_word(words):
+    """Prints the last word after popping it off."""
+    word = words.pop(-1)
+    print word
+
+def sort_sentence(sentence):
+    """Takes in a full sentence and returns the sorted words."""
+    words = break_words(sentence)
+    return sort_words(words)
+
+def print_first_and_last(sentence):
+    """Prints the first and last words of the sentence."""
+    words = break_words(sentence)
+    print_first_word(words)
+    print_last_word(words)
+
+def print_first_and_last_sorted(sentence):
+    """Sorts the words then prints the first and last one."""
+    words = sort_sentence(sentence)
+    print_first_word(words)
+    print_last_word(words)
+
+
+print "Let's practice everything."
+print 'You\'d need to know \'bout escapes with \\ that do \n newlines and \t tabs.'
+
+poem = """
+\tThe lovely world
+with logic so firmly planted
+cannot discern \n the needs of love
+nor comprehend passion from intuition
+and requires an explantion
+\n\t\twhere there is none.
+"""
+
+
+print "--------------"
+print poem
+print "--------------"
+
+five = 10 - 2 + 3 - 6
+print "This should be five: %s" % five
+
+def secret_formula(started):
+    jelly_beans = started * 500
+    jars = jelly_beans / 1000
+    crates = jars / 100
+    return jelly_beans, jars, crates
+
+
+start_point = 10000
+beans, jars, crates = secret_formula(start_point)
+
+print "With a starting point of: %d" % start_point
+print "We'd have %d beans, %d jars, and %d crates." % (beans, jars, crates)
+
+start_point = start_point / 10
+
+print "We can also do that this way:"
+print "We'd have %d beans, %d jars, and %d crates." % secret_formula(start_point)
+
+
+sentence = "All good things come to those who wait."
+
+words = break_words(sentence)
+sorted_words = sort_words(words)
+
+print_first_word(words)
+print_last_word(words)
+print_first_word(sorted_words)
+print_last_word(sorted_words)
+sorted_words = sort_sentence(sentence)
+print sorted_words
+
+print_first_and_last(sentence)
+
+print_first_and_last_sorted(sentence)
+
+
+
+Memorizing Logic
+True and True	True	
+False and True	False
+1==1 and 2==1	False	
+test == test	True	
+1==1 or 2!=1	True
+True and 1==1	True
+False and 0!=0	False	
+True and 1==1 	True
+test == testing	False
+1!=0 and 2==1	False
+test !=testing	True	
+1!=0 and 2==1	False	
+not (True and False)	True
+not 1==1 and 0!=1	False
+not 10==1 or 1000==1000	False
+not 1!=10 or 3==4	False
+not	testing==testing and jason==cool	True	
+1==1 and not testing==1 or 1==0		True	
+chunky==bacon and not 3==4 or 3==3	False	
+3==3 and not testing==testing or python==fun	False
+
+What if
+people = 20	
+cats = 30
+dogs = 15
+
+if people < cats:
+	print "There are too many cats the world is doomed"
+	
+if people > cats:	
+	print "Not many cats the world is saved"
+	
+if people < dogs:
+	print "The world is drooled on"
+	
+if people > dogs: 
+	print "The world is dry"
+	
+dogs += 5
+
+if people >= dogs:
+	print "People are greter than or equal to dogs"
+	
+if people <= dogs:
+	print "People are less than or equal to dogs"
+	
+if people == dogs:
+	print "People are dogs"
+	
+# increment by operators,  +=, -=, 
+
+Else and if
+people =30
+cars = 40
+buses = 15
+
+if cars > people:
+	print "We should take the cars"
+elif cars < people:
+	print "We should not take the cars"
+else:
+	print "We can't decide"
+	
+if buses > cars:
+	print "That's too many buses"
+elif buses < cars:
+	print "Maybe we could take the buses"
+else:
+	print "We still can't decide"
+	
+if people > buses and cars:
+	print "Alright let's just take the buses"
+else:
+	print "Lets just stay home then"
+	
+Making decisions
+
+print "You enter a dark room with two doors. Do you go through door 1 or door 2?"
+
+door = raw_input("> ")
+
+if door == "1":
+	print " There is a huge bear eating cheese cake. What do you do?"
+	print " 1. Take the cake"
+	print " 2. Scream at the bear"
+	
+	bear = raw_input("> ")
+	
+	if bear == "1":
+		print "The bear eats your face off"
+	elif bear == "2":
+		print "The bear bites your leg off"
+	else:
+		print "Well doing %s is probably better. The bear runs away" % bear
+		
+elif door == "2":
+	print "You stare into the abyss of Cthulhu's retina"
+	print "1. Blueberries"
+	print "2. yellow jackets"
+	print "3. Understanding revolvers yelling melodies."
+	
+	insanity = raw_input("> ")
+	
+	if insanity == "1" or insanity == "2":
+		print "Your body survives powered by a mind of jello"
+	else:
+		print "Your insanity rots your eyes into a pool of muck"
+
+else:
+	print "You stumble around and fall into an open pit of knives"
+	
+Loops and lists
+
+the_test = [[1,2,3],[4,5,6]]
+the_count = [1, 2, 3, 4, 5]
+fruits = ['apples', 'oranges', 'pears', 'bananna']
+change = [1, 'pennies', 2, 'dimes', 3, 'quarters']
+# lists aka arrays
+#(for key word in python)
+#(number could be anything just a temp variable
+#(in key word directing python to list)
+#(the_count list created above)
+#(colon at the end tells python the next line will be indented 4 spaces for block)
+#( function print "blah blah blah %d for numbers)
+#(%s string, %r represent or raw data) 
+
+for cork in the_test:
+	print "This is: %r" % cork
+	
+for number in the_count:
+	print "This is the count: %d" % number
+	
+for fruit in fruits:
+	print "Fruit type: %s" % fruit
+	
+for i in change:
+	print "I got %r" % i
+
+elements = []
+
+for i in range(0, 6):
+	print "adding %d to the list" % i
+	elements.append(i)
+#(or range(6) 0 is implied
+#(if range(6) you don't use elements.append)
+#elements = range(6)	
+for i in elements:
+	print "Element was: %d" % i
+	
+	
+While loops
+
+i = 0
+numbers = []
+
+while i < 6:
+	print "At the top i is %d" % i
+	numbers.append(i)
+	
+	i = i + 1
+	print "Numbers now: ", numbers
+	print "At the bottom i is %d" % i
+	
+print "The numbers: "
+
+for num in numbers:	
+	print num
+	
+# (Control C will force quit if needed)
+#(study drills)
+print "\nConverting while loop to function. drill_1"
+#(def name(variable):)
+#(indent 4 spaces then variable = 0)
+#(variable = [list]
+#(while variable less then (n)variable:)
+#(indent 4 spaces print "what ever: %d" % i)
+#(variable.append(i))
+#(i = i + 1)
+#(print variable)
+def drill_1(n): 
+	i = 0
+	numbers1 = [ ]
+	while i < n:
+		print "Item: %d" % i
+		numbers1.append(i)
+		i = i + 1
+#or i = i + 4 or what ever
+	print numbers1
+	
+#2 drill
+#(needed function drill_1(upper limit))
+#(this is where drill_1 gets its value cap and runs until it hits it)
+
+print "\nUsing drill_1 with n = 3"
+drill_1(3)
+
+print "\nUsing drill_1 with n = 8"
+drill_1(8)
+
+print "\nUsing drill_1 with n = 20"
+drill_1(20)
+
+print "\nUsing function drill_3 to allow variable step size"
+def drill_3(n, s):
+	i = 0
+	numbers3 = [ ]
+	while i < n:
+		print "Item: %d" % i
+		numbers3.append(i)
+		i = i + s
+	print numbers3
+	
+print "\nUsing drill_3 with n = 12 and s = 3"
+print "\n12 being the upper limit and 3 being the step size"
+drill_3(12, 3)
+
+#(using a for loop instead of a while loop. Use while loop sparingly)
+print "\n drill_5 converting to a for loop"
+
+def drill_5(n, s):
+	numbers5 = range(0, n, s)
+	for i in numbers5:
+		print "Item %d" % i
+	print numbers5
+	
+drill_5(14, 4)
+
+	
+
+
+
+
+Accessing Elements of lists
+
+i = 0
+numbers = []
+
+while i < 6:
+	print "At the top i is %d" % i
+	numbers.append(i)
+	
+	i = i + 1
+	print "Numbers now: ", numbers
+	print "At the bottom i is %d" % i
+	
+print "The numbers: "
+
+for num in numbers:	
+	print num
+	
+# (Control C will force quit if needed)
+#(study drills)
+print "\nConverting while loop to function. drill_1"
+#(def name(variable):)
+#(indent 4 spaces then variable = 0)
+#(variable = [list]
+#(while variable less then (n)variable:)
+#(indent 4 spaces print "what ever: %d" % i)
+#(variable.append(i))
+#(i = i + 1)
+#(print variable)
+def drill_1(n): 
+	i = 0
+	numbers1 = [ ]
+	while i < n:
+		print "Item: %d" % i
+		numbers1.append(i)
+		i = i + 1
+#or i = i + 4 or what ever
+	print numbers1
+	
+#2 drill
+#(needed function drill_1(upper limit))
+#(this is where drill_1 gets its value cap and runs until it hits it)
+
+print "\nUsing drill_1 with n = 3"
+drill_1(3)
+
+print "\nUsing drill_1 with n = 8"
+drill_1(8)
+
+print "\nUsing drill_1 with n = 20"
+drill_1(20)
+
+print "\nUsing function drill_3 to allow variable step size"
+def drill_3(n, s):
+	i = 0
+	numbers3 = [ ]
+	while i < n:
+		print "Item: %d" % i
+		numbers3.append(i)
+		i = i + s
+	print numbers3
+	
+print "\nUsing drill_3 with n = 12 and s = 3"
+print "\n12 being the upper limit and 3 being the step size"
+drill_3(12, 3)
+
+#(using a for loop instead of a while loop. Use while loop sparingly)
+print "\n drill_5 converting to a for loop"
+
+def drill_5(n, s):
+	numbers5 = range(0, n, s)
+	for i in numbers5:
+		print "Item %d" % i
+	print numbers5
+	
+drill_5(14, 4)
+
+	
+
+
+
+
+Branches and functions
+from sys import exit
+
+def gold_room():
+	print "This room is full of gold, how many pieces do you take"
+	
+	next = raw_input("> ")
+	if "0" in next or "1" in next:
+		how_much = int(next)
+	else:
+		dead("man. learn to type a number.")
+		
+	if how_much < 50:
+		print "Nice, you're not greedy, you win!"
+		exit(0)
+	else:
+		dead("You greedy bastard!")
+		
+def bear_room():
+	print "There is a bear in here"
+	print "The bear has a bunch of honey"
+	print "The fat bear is in front of another door"
+	print "How are you going to move the bear"
+	print "Do you Taunt bear or Take honey," 
+	bear_moved = False
+	
+	while True:
+		next = raw_input("> ")
+		
+		if next == "Take honey":
+			dead("The bear looks at you and slaps your face off")
+		elif next == "taunt bear" and not bear_moved:
+			print "the bear has moved from the door you can now go through"
+			bear_moved = True
+		elif next == "open door" and bear_moved:
+			gold_room()
+		else:
+			print "I got no idea what that means"
+			
+def cthulhu_room():
+	print "Here you see the great evil Cthulu"
+	print "He, it, Whatever stares at you and you go insane"
+	print "Do you flee for your life or eat your head?"
+	
+	next = raw_input("> ")
+	
+	if "flee" in next:
+		start()
+	elif "head" in next:
+		dead("Well that was tastey")
+	else:
+		cthulhu_room()
+		
+def dead(why):
+	print why, "Good job"
+	exit(0)
+	
+def start():
+	print "You are in a dark room"
+	print "There is a door to your right and left"
+	print "Which one do you take"
+	
+	next = raw_input("> ")
+	
+	if next == "left":
+		bear_room()
+	elif next == "right":
+		cthulhu_room()
+	else:
+		dead("You stumble around the room until you starve")
+		
+start()
+	
+	
+	
+	
+	
+	
+	
+			 
+	
+Doing things to lists
+
+ten_things = "Apples Oranges Crows Telephone Light Sugar"
+
+print "Wait there is not 10 things in this list. Let's fix that"
+
+stuff = ten_things.split(' ')
+more_stuff = ["day", "night", "song", "frisbe", "corn", "banana", "girl", "boy"]
+
+while len(stuff) != 10:
+	next_one = more_stuff.pop()
+	print "adding", next_one
+	stuff.append(next_one)
+	print "there's %d items now" % len(stuff)
+	
+print "there we go: ", stuff
+
+print "lets do some things with stuff"
+
+print stuff[1]
+print stuff[-1] #whoa fancy
+print stuff.pop()
+print ' '.join(stuff) #what cool
+print '#'.join(stuff[3:5]) #supper stellar
+	 
+	 
+Dictionaries
+
+#create a mapping of state to abbreviation
+states = {
+	'oregon': 'or',
+	'florida': 'fl',
+	'California': 'ca',
+	'new york': 'ny',
+	'michigan': 'mi'
+}
+
+#create a basic set of states and some cities in them
+cities = {
+	'ca' : 'hanford',
+	'mi' : 'detroit',
+	'fl' : 'jacksonville'
+}
+
+#add some more cities
+cities['ny'] = 'new york'
+cities['or'] = 'portland'
+
+#print out some cities
+print '_' * 10
+print "ny state has: ", cities['ny']
+print "or state has: ", cities['or']
+
+#print some states
+print '_' * 10
+print "michigans abbreviation is: ", states['michigan']
+print "floridas abbreviation is: ", states['florida']
+
+#now do it by using the state then cities dictionary
+print '_' * 10
+print "michigan has: ", cities[states['michigan']]
+print "florida has: ", cities[states['florida']]
+
+#print every state abbreviation
+print '_' * 10
+for state, abbrev in states.items():
+	print "%s is abbreviated %s and has %s" % (
+		state, abbrev, cities[abbrev])
+		
+print '_' *10
+#safely get an abbreviation from state that might not be there
+state = states.get('texas', None)
+
+if not state:
+	print "sorry no texas"
+	
+#get a city with a default value
+city = cities.get('tx', 'does not exist')
+print "the city for the state 'tx' is: %s" % city
+
+
+Modules classes and Objects
+
+class Song(object):
+
+	def _init_(self, lyrics):
+		self.lyrics = lyrics
+	
+	def sing_me_a_song(self):
+		for line in self.lyrics:
+			print line
+		
+happy_bday = Song(["Happy birthday to you I don't want to get sued so i'll stop rigt there"])
+					
+bulls_on_parade = Song(["They rally around the family",
+					"With pockets full of shells"])
+					
+happy_bday.sing_me_a_song()
+
+bulls_on_parade.sing_me_a_song()
+					
+Object Oriented
+class Song(object):
+
+	def _init_(self, lyrics):
+		self.lyrics = lyrics
+	
+	def sing_me_a_song(self):
+		for line in self.lyrics:
+			print line
+		
+happy_bday = Song(["Happy birthday to you I don't want to get sued so i'll stop rigt there"])
+					
+bulls_on_parade = Song(["They rally around the family",
+					"With pockets full of shells"])
+					
+happy_bday.sing_me_a_song()
+
+bulls_on_parade.sing_me_a_song()
+					
+	 
+
+
